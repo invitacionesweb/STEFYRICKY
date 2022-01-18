@@ -1,0 +1,299 @@
+:root {
+    --color-principal:#000000;
+    --color-secundario:#ffffff;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+
+}
+/*
+font-family: 'Dawning of a New Day', cursive;
+font-family: 'EB Garamond', serif;
+*/
+h1 {
+    font-family: 'Dawning of a New Day', cursive !important;
+}
+.boton {
+    background-color: var(--color-principal);
+    padding: 10px 20px;
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 16px;
+}
+.boton:hover {
+    color: var(--color-principal);
+    padding: 10px 20px;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-principal);
+    text-decoration: none;
+}
+header {
+   width: 100%;
+   height: 100vh; 
+   text-align: center;
+}
+.background-img {
+    width: 100%;
+    height: 70vh; 
+    background: url("img/background.jpeg") repeat fixed 100%; 
+    color: white; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    animation-duration: 5s;
+    animation-name: texto;
+}
+.jumbotron {
+    background: none !important;
+  }
+.inicio {
+    padding: 40px;
+    height: 30vh;
+    animation-duration: 5s;
+    animation-name: texto;
+
+}
+@keyframes texto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.background-img img {
+    width: 100%;
+}
+h3 {
+    font-family: 'Dawning of a New Day', cursive !important;
+}
+
+
+.texto-dedicatoria {
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin: 40px 60px;
+}
+
+.ubicacion {
+    height: auto;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.de-honor {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.cortejo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.de-honor .title {
+    font-size: 40px;
+    font-family: 'Dawning of a New Day', cursive;
+
+}
+.cortejo div {
+    padding: 40px;
+}
+
+.cortejo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    filter: grayscale(100%);
+
+}
+.cortejo img:hover {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    filter: grayscale(0%);
+
+}
+.cortejo h2 {
+    font-family: 'Dawning of a New Day', cursive !important;
+
+}
+
+.regalos {
+    width: 100%;
+    height: 40vh;
+    padding: 40px;
+    text-align: center;
+}
+.regalos-box {
+    padding: 60px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.fiesta {
+    background: url("img/fiesta.png") repeat fixed 100%;
+    width: 100%;
+    height: 50vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    font-family: 'Dawning of a New Day', cursive;
+    text-align: center;
+
+
+}
+.rrss {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    text-align: center;
+    padding: 40px;
+
+}
+.cuenta {
+    padding: 40px;
+}
+.cuenta img {
+    width: 95px;
+    padding-bottom: 20px;
+    
+
+}
+
+.end {
+    background-color: var(--color-principal);
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.end .nombres {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 60px;
+    
+
+}
+
+.protocolo {
+    display: grid;
+    place-items: center;
+    padding: 40px;
+    text-align: center;
+}
+.protocolo .protocolo2 {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 60px;
+}
+
+.protocolo .iconos {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    padding: 20px;
+    gap: 100px;
+    border-bottom: 1px solid grey;
+}
+
+.marcas {
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+}
+.marca {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.marca img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    margin-top: 30px;
+
+}
+.marca img:hover {
+    filter: grayscale(0%);
+    
+
+}
+
+footer  .contenido{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    height: auto;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
+    padding: 40px;  
+    
+
+}
+
+footer  .contenido p {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: auto;
+   
+}
+ul a {
+    color: var(--color-secundario);
+}
+ul a:hover {
+    color:#cec6c6;
+}
+@media (max-width: 660px) {
+    .cortejo {
+        grid-template-columns:1fr;
+    }
+
+    .fiesta {
+        font-size: 50px; 
+    }
+
+    .rrss {
+        grid-template-columns:1fr;
+    }
+
+    .protocolo .iconos {
+        grid-template-columns:1fr;
+        gap: 40px;
+    }
+    footer  .contenido{
+        grid-template-columns:1fr;
+        height: auto; 
+        text-align: center;
+        
+    }
+    ul {
+        justify-content: center;
+    }
+
+    .marca {
+        grid-template-columns:1fr 1fr;
+    }
+}
+
